@@ -1,0 +1,27 @@
+{
+  "name": "article-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "history": "^4.7.2",
+    "normalizr": "^3.2.4",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-redux-router": "^0.0.14",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.9.1",
+    "redux-saga": "^0.16.0",
+    "reselect": "^3.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
