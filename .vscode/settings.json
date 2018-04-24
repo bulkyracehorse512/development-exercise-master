@@ -1,0 +1,22 @@
+{
+  "editor.insertSpaces": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": false,
+  "jshint.options": {
+    "asi": true,
+    "esversion": 6
+  },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.autoIndent": false
+  }
+}
