@@ -1,0 +1,39 @@
+.aboutWrapper {
+  margin-top: 100px;
+}
+
+.sectionWrapper {
+  border-top-color: #E5E5E5;
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.author {
+  font-family: 'Copernicus Heavy';
+  font-size: 19px;
+  color: #6F4F31;
+  display: inline;
+  padding-left: 5px;
+}
+
+.description {
+  font-family: 'Futura Std';
+  font-size: 15px;
+  color: #B2B2B2;
+  display: inline;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+}
+
+.tag {
+  font-family: 'Futura Std';
+  font-size: 15px;
+  color: #B2B2B2;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+  margin: 7px;
+}
+
+

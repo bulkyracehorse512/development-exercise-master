@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Copernicus Heavy";
+  src: url("assets/fonts/copernicus_webfont/Copernicus-Heavy.eot");
+  src:
+  url("assets/fonts/copernicus_webfont/Copernicus-Heavy.woff") format("woff"),
+  url("assets/fonts/copernicus_webfont/Copernicus-Heavy.ttf") format("opentype"),
+  url("assets/fonts/copernicus_webfont/Copernicus-Heavy.svg") format("svg");
+}

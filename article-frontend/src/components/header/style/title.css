@@ -1,0 +1,86 @@
+.editWrapper {
+  position: relative;
+  right: 32px;
+}
+
+.edit {
+  background-color: #F3E13B;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.checkmark {
+  background-color: #A2D05A;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.x {
+  background-color: #E56D3E;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.icon-button {
+  display: block;
+  align-items:center;
+  justify-content:center;
+  padding-top: 3px;
+}
+
+.editableWrapper {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 20px;
+  bottom: 0;
+}
+
+.editableTitle {
+  font-size: 42px;
+  font-family: "Copernicus Heavy";
+  text-align: left;
+  color: #1A1A1A;
+  margin: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CBCBCB;
+  background-color: #F9F9F9;
+  padding: 20px;
+}
+
+.slug {
+  font-size: 14px;
+  font-family: "Futura Std";
+  color: #B2B2B2;
+  display: inline;
+}
+
+.slugText {
+  font-size: 14px;
+  font-family: "Futura Std";
+  color: #666666;
+  display: inline;
+  padding-left: 5px;
+}
+
+.innerEditable {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: inline;
+}
+
+.slugWrapper {
+  margin-top: 10px;
+  letter-spacing: 1.2px;
+}
+
+/*
+.editRow {
+  padding: 5px;
+  background-color: #fff;
+} */

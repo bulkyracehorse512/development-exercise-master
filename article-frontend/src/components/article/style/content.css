@@ -1,0 +1,32 @@
+.contentWrapper {
+  margin-top: 100px;
+}
+
+.location {
+  font-family: 'Futura Std';
+  font-size: 16px;
+  color: #B2B2B2;
+  display: inline;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+  padding-right: 10px;
+}
+
+.content {
+  font-family: 'Palatino';
+  font-size: 19px;
+  display: inline;
+  color: #333333;
+  line-height: 1.5em;
+}
+
+.feature {
+  font-family: 'Copernicus Heavy';
+  font-size: 30px;
+  color: #8A98A6;
+  margin-left: -55px;
+  line-height: 1.3em;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 55px;
+}

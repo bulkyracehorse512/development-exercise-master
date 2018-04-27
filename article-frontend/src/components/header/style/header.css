@@ -1,0 +1,47 @@
+.background {
+  background: url('../../../assets/headerImage.jpg') no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 800px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  margin-top: 100px;
+}
+
+.titleRow {
+  bottom: 0;
+  position: absolute;
+}
+
+.titleWrapper {
+  /* position: absolute; */
+  background-color: rgb(255, 255, 255);
+  width: fit-content;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 11px;
+}
+
+.title {
+  font-size: 50px;
+  font-family: "Copernicus Heavy";
+  text-align: left;
+  color: #fff;/* just incase the background-clip is not supported so text color white */
+  background: url('../../../assets/headerImage.jpg') no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0px;
+  margin-bottom: -35px;
+  /* font-size: 150px; */
+}
+
+/* USE WEBKIT-BACKGROUND-CLIP: text for actual effect */
+
+/*Assets for the page layout can be found in the excercise/assets directory. Please note that the text of the Article header is transparent to reveal the hero image behind - this is the only element on the page with that effect.*/

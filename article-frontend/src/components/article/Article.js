@@ -1,17 +1,30 @@
+import './style/article.css'
+
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { push } from 'react-router-redux'
 
-class Article extends Component {
+import {Grid, Row, Column} from 'react-cellblock'
+import About from './About.js'
+import Content from './Content.js'
 
+class Article extends Component {
   render() {
-    return (
-      <div>
-        <h2>byeee</h2>
-      </div>
+    return(
+      <Grid className="articleWrapper" gutterWidth={70}>
+        <Row>
+          <Column width="2/16">
+          </Column>
+          <Column width="4/16">
+            <About />
+          </Column>
+          <Column width="10/16">
+            <Content />
+          </Column>
+        </Row>
+      </Grid>
     )
   }
-
 }
 
-export default Article
+export default connect()(Article)

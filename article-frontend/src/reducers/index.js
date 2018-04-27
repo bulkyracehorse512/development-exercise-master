@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux'
-import headerReducer from './headerReducer'
+import { routerReducer as routing } from 'react-router-redux'
+import header from './headerReducer'
 
 const rootReducer = combineReducers({
-  headerState: headerReducer,
+  header,
+  routing,
 })
 
 export default rootReducer

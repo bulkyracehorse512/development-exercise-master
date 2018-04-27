@@ -1,5 +1,5 @@
-import createRequestActionTypes from 'utils/createRequestActionTypes'
-
-export const CREATE_HEADER = createRequestActionTypes('ADD_INGREDIENT')
-export const REDUX_INIT = '@@redux/INIT'
-export const LOCATION_CHANGE = '@@router/LOCATION_CHANGE'
+export const UPDATE_EDIT_STATE = 'UPDATE_EDIT_STATE';
+export const CHANGE_TITLE_REQUEST = 'CHANGE_TITLE_REQUEST';
+export const CHANGE_TITLE_FAILURE = 'CHANGE_TITLE_FAILURE';
+export const CHANGE_TITLE_SUCCESS = 'CHANGE_TITLE_SUCCESS';
+export const CANCEL_TITLE_CHANGE = 'CANCEL_TITLE_CHANGE';

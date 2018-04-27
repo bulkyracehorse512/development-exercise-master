@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { push } from 'react-router-redux'
+import {Grid, Row, Column} from 'react-cellblock'
+
+import Header from '../header/Header'
+import Article from '../article/Article'
 
 class App extends Component {
-
   render() {
-    return (
+    return(
       <div>
-        <h2>HIIII</h2>
+        <Header />
+        <Article />
       </div>
     )
   }
-
 }
 
-export default App
+export default connect()(App)
