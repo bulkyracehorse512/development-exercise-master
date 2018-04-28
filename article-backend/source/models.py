@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from django.contrib.auth.models import User
 from django.db import models
-from django.template.defaultfilters import slugify
+from django.utils.text import slugify
 
 from .utils import get_ghost_user, unique_slug
 
