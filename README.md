@@ -50,7 +50,7 @@ As a whole, this exercise aims to touch on a variety of skills and concepts invo
 
 
 
-Instructions for running:
+# Instructions for running:
 
 First we'll need to set up the backend.
 
