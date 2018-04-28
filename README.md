@@ -64,7 +64,7 @@ docker-compose run web python3 manage.py loaddata source/fixtures/fixtures.json
 ```
 
 Now that our container is set up and our database is populated, run 
-```dc up```
+```docker-compose up```
 so that our local server is up.
 
 
