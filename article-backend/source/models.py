@@ -44,12 +44,15 @@ class Article(models.Model):
         unique slug for an article by appending a unique 5 character hash to the
         end of duplicate titles.
         """
-        if not self.slug:
-            slug = slugify(self.title)
+        slug = slugify(self.title)
+
+        if self.slug:
             if not Article.objects.filter(slug=slug).exists():
-                self.slug = unique_slug(self.title)
-            else:
                 self.slug = slug
+            else:
+                self.slug = unique_slug(self.title)
+        else:
+            self.slug = slug
 
     def save(self, *args, **kwargs):
         """ Saves the article after calling `self.prepare_save`. """

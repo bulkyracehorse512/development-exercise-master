@@ -24,3 +24,10 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     def get_tags(self, article):
         return [t.tag for t in article.tags.all()]
+
+    def update(self, instance, validated_data):
+        """ Calls save on model instance after update to update slug.
+        """
+        instance = super(ArticleSerializer, self).update(instance, validated_data)
+        instance.save()
+        return instance

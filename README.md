@@ -50,4 +50,26 @@ As a whole, this exercise aims to touch on a variety of skills and concepts invo
 
 
 
-`docker-compose run web python3 manage.py migrate`
+Instructions for running:
+
+First we'll need to set up the backend.
+
+This will involve building the docker container, composing the images, and creating/populating the database from the fixture file and migrations.
+
+First cd into `article-backend`.
+Then run `docker build .`
+Next `docker-compose run web python3 manage.py migrate`
+and `docker-compose run web python3 manage.py loaddata source/fixtures/fixtures.json`
+
+Now that our container is set up and our database is populated, run `dc up` so that our local server is up.
+
+
+Now we can set up the front-end.  In a new terminal window in the main directory `cd article-frontend`
+
+Then run `yarn install` to install the package dependencies.
+
+Once that's done, run `yarn start`.
+
+A localhost window should pop up with the web-app, populated with a randomly selected article from the database.  Play around with the requested title edit functionality.
+
+Let me know if you have any questions or issues!

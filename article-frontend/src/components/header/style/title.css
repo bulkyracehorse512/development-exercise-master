@@ -17,6 +17,11 @@
   cursor: pointer;
 }
 
+.gray {
+  background-color: #4D4D4D;
+  cursor: default;
+}
+
 .x {
   background-color: #E56D3E;
   width: 32px;
@@ -51,6 +56,7 @@
   border-color: #CBCBCB;
   background-color: #F9F9F9;
   padding: 20px;
+  width: 100%;
 }
 
 .slug {
@@ -79,8 +85,7 @@
   letter-spacing: 1.2px;
 }
 
-/*
-.editRow {
-  padding: 5px;
-  background-color: #fff;
-} */
+
+.titleBox {
+  padding-right: 50px;
+}

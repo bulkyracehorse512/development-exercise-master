@@ -2,7 +2,6 @@ import './style/article.css'
 
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { push } from 'react-router-redux'
 
 import {Grid, Row, Column} from 'react-cellblock'
 import About from './About.js'

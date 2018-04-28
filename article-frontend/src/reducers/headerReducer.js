@@ -3,18 +3,19 @@ import {
   CHANGE_TITLE_SUCCESS,
   CHANGE_TITLE_FAILURE,
   CANCEL_TITLE_CHANGE,
+  FETCH_CONTENT_SUCCESS,
  } from '../constants/actionTypes'
 
 const initialState = {
   edit: false,
-  title: "Are we out of the woods yet?",
+  title: '',
+  slug: '',
   error: null,
 }
 
 export default function (state = initialState, action) {
   switch(action.type) {
     case UPDATE_EDIT_STATE:
-      console.log("YA HERDDD")
       return {
         ...state,
         edit: !state.edit,
@@ -22,7 +23,8 @@ export default function (state = initialState, action) {
     case CHANGE_TITLE_SUCCESS:
       return {
         ...state,
-        title: action.title,
+        title: action.response.title,
+        slug: action.response.slug,
         edit: false,
         error: null,
       }
@@ -30,6 +32,7 @@ export default function (state = initialState, action) {
       return {
         ...state,
         title: state.title,
+        slug: state.slug,
         edit: false,
         error: action.error,
       }
@@ -38,6 +41,12 @@ export default function (state = initialState, action) {
         ...state,
         title: state.title,
         edit: false,
+      }
+    case FETCH_CONTENT_SUCCESS:
+      return {
+        ...state,
+        title: action.response.title,
+        slug: action.response.slug,
       }
     default:
       return state;

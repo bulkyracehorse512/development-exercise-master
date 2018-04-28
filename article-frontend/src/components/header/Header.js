@@ -12,7 +12,6 @@ import ViewMode from './ViewMode'
 class Header extends Component {
 
   isEditMode() {
-    console.log("NOW???", this.props.edit)
     if (this.props.edit) {
       return <EditMode />
     }

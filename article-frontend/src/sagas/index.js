@@ -1,6 +1,8 @@
-import { call, all } from 'redux-saga/effects'
+import { fork } from 'redux-saga/effects'
 import headerSaga from './headerSaga'
+import articleSaga from './articleSaga'
 
 export default function* rootSaga() {
-  yield all([call(headerSaga)])
+  yield fork(headerSaga);
+  yield fork(articleSaga);
 }
