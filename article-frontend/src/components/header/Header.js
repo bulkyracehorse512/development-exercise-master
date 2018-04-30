@@ -43,7 +43,7 @@ class Header extends Component {
           <Row className="titleRow">
             <Column width="1/8>">
             </Column>
-            <Column width="6/8">"
+            <Column width="6/8">
               {this.isEditMode()}
             </Column>
             <Column width="1/8>">

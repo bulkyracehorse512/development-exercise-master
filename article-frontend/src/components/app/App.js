@@ -7,7 +7,9 @@ import { FETCH_CONTENT_REQUEST } from '../../constants/actionTypes'
 
 class App extends Component {
   componentWillMount() {
-    this.props.dispatch({ type: FETCH_CONTENT_REQUEST})
+    if (this.props.initialLoad) {
+      this.props.dispatch({ type: FETCH_CONTENT_REQUEST})
+    }
   }
 
   render() {
@@ -20,4 +22,11 @@ class App extends Component {
   }
 }
 
-export default connect()(App)
+
+const mapStateToProps = (state) => {
+  return {
+    initialLoad: state.header.initialLoad,
+  };
+}
+
+export default connect(mapStateToProps)(App)

@@ -6,3 +6,7 @@
   url("assets/fonts/copernicus_webfont/Copernicus-Heavy.ttf") format("opentype"),
   url("assets/fonts/copernicus_webfont/Copernicus-Heavy.svg") format("svg");
 }
+
+body {
+  margin: 0px;
+}

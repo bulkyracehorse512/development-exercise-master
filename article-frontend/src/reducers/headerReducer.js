@@ -11,6 +11,7 @@ const initialState = {
   title: '',
   slug: '',
   error: null,
+  initialLoad: true,
 }
 
 export default function (state = initialState, action) {
@@ -47,6 +48,7 @@ export default function (state = initialState, action) {
         ...state,
         title: action.response.title,
         slug: action.response.slug,
+        initialLoad: false,
       }
     default:
       return state;
