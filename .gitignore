@@ -1,0 +1,31 @@
+*.pyc
+/db.sqlite3
+.DS_Store
+.env
+*/settings/local.py
+/staticfiles/*
+/mediafiles/*
+__pycache__/
+
+# coverage result
+.coverage
+/coverage/
+
+# pycharm
+.idea
+
+# data
+*.dump
+
+# npm
+node_modules/
+npm-debug.log
+
+#Folders
+.DS_Store
+
+# Webpack
+/assets/bundles/*
+/assets/webpack_bundles/*
+/webpack-stats.json
+/jquery-webpack-stats.json

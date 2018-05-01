@@ -45,7 +45,6 @@ class Article(models.Model):
         end of duplicate titles.
         """
         slug = slugify(self.title)
-        print("\n\n~~~", slug, Article.objects.filter(slug=slug).exists())
         if not Article.objects.filter(slug=slug).exists():
             self.slug = slug
         else:

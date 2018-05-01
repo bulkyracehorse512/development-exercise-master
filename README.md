@@ -63,7 +63,7 @@ docker-compose run web python3 manage.py migrate
 docker-compose run web python3 manage.py loaddata source/fixtures/fixtures.json
 ```
 
-Now that our container is set up and our database is populated, run 
+Now that our container is set up and our database is populated, run
 ```docker-compose up```
 so that our local server is up.
 
