@@ -45,10 +45,13 @@ class Article(models.Model):
         end of duplicate titles.
         """
         slug = slugify(self.title)
-        if not Article.objects.filter(slug=slug).exists():
-            self.slug = slug
-        else:
+        article = Article.objects.filter(slug=slug)
+
+        # Populate with unique slug if pre-existing obj is not the current obj
+        if article.exists() and not article.get().id is self.id:
             self.slug = unique_slug(self.title)
+        else:
+            self.slug = slug
 
     def save(self, *args, **kwargs):
         """ Saves the article after calling `self.prepare_save`. """
